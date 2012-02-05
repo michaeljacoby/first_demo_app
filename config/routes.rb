@@ -1,9 +1,9 @@
 FirstDemoApp::Application.routes.draw do
-  get "pages/home"
+  GET /pages/home
 
-  get "pages/contact"
+  GET /pages/contact
   
-  get "pages/about"
+  GET /pages/about
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

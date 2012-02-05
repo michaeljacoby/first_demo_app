@@ -1,0 +1,302 @@
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-cache-1.1/lib/rack/cache/context.rb:65:in `call!'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tionpack-3.2.1/lib/action_dispatch/middleware/static.rb:53:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-cache-1.1/lib/rack/cache/context.rb:50:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-cache-1.1/lib/rack/cache/context.rb:181:in `lookup'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ilties-3.2.1/lib/rails/engine.rb:479:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ilties-3.2.1/lib/rails/application.rb:220:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ilties-3.2.1/lib/rails/railtie/configurable.rb:30:in `method_missing'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   /home/heroku_rack/lib/static_as
+sets.rb:9:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   /home/heroku_rack/lib/last_acce
+ss.rb:15:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/urlmap.rb:64:in `block in call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/urlmap.rb:49:in `each'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/builder.rb:134:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/urlmap.rb:49:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   /home/heroku_rack/lib/date_head
+er.rb:14:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:74:in `pre_process'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:74:in `catch'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   eventmachine (0.12.10) lib/even
+tmachine.rb:256:in `run_machine'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/builder.rb:134:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   eventmachine (0.12.10) lib/even
+tmachine.rb:256:in `run'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/server.rb
+:156:in `start'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:42:in `receive_data'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/backends/
+base.rb:57:in `start'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/runner.rb
+:177:in `run_command'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/controlle
+rs/controller.rb:80:in `start'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:76:in `block in pre_process'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   /usr/ruby1.9.2/bin/thin:19:in `
+load'
+?[32m2012-02-03T21:11:43+00:00 heroku[router]:?[0m GET stark-autumn-8160.heroku.
+com/assets/rails.png dyno=web.1 queue=0 wait=0ms service=1825ms status=500 bytes
+=643
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   /usr/ruby1.9.2/bin/thin:19:in `
+<main>'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m cache: [GET /assets/rails.png] mi
+ss
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/runner.rb
+:143:in `run!'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:57:in `process'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) bin/thin:6:in `<to
+p (required)>'
+?[33m2012-02-03T21:11:52+00:00 heroku[nginx]:?[0m 99.163.103.21 - - [03/Feb/2012
+:21:11:52 +0000] "GET /pages/home.html HTTP/1.1" 500 643 "-" "Mozilla/5.0 (Windo
+ws NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safar
+i/535.7" stark-autumn-8160.heroku.com
+?[32m2012-02-03T21:11:52+00:00 heroku[router]:?[0m GET stark-autumn-8160.heroku.
+com/pages/home.html dyno=web.1 queue=0 wait=0ms service=8ms status=500 bytes=643
+
+?[32m2012-02-03T21:11:57+00:00 heroku[router]:?[0m GET stark-autumn-8160.heroku.
+com/pages/home dyno=web.1 queue=0 wait=0ms service=11ms status=500 bytes=643
+?[33m2012-02-03T21:11:57+00:00 heroku[nginx]:?[0m 99.163.103.21 - - [03/Feb/2012
+:21:11:57 +0000] "GET /pages/home HTTP/1.1" 500 643 "-" "Mozilla/5.0 (Windows NT
+ 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535
+.7" stark-autumn-8160.heroku.com
+
+wookie@WOOKIE-CO /c/sites/first_demo_app (master)
+$ heroku logs
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   eventmachine (0.12.10) lib/even
+tmachine.rb:256:in `run'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/backends/
+base.rb:57:in `start'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/runner.rb
+:177:in `run_command'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/server.rb
+:156:in `start'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/controlle
+rs/controller.rb:80:in `start'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:74:in `pre_process'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   thin (1.2.6) bin/thin:6:in `<to
+p (required)>'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:57:in `process'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/runner.rb
+:143:in `run!'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   /usr/ruby1.9.2/bin/thin:19:in `
+<main>'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   /usr/ruby1.9.2/bin/thin:19:in `
+load'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:42:in `receive_data'
+?[36m2012-02-03T20:58:48+00:00 app[web.1]:?[0m cache: [GET /pages/about] miss
+?[36m2012-02-03T21:00:23+00:00 heroku[web.1]:?[0m State changed from up to bounc
+ing
+?[36m2012-02-03T21:00:23+00:00 heroku[web.1]:?[0m State changed from bouncing to
+ created
+?[36m2012-02-03T21:00:23+00:00 heroku[web.1]:?[0m State changed from created to
+starting
+?[36m2012-02-03T21:00:28+00:00 heroku[web.1]:?[0m State changed from starting to
+ up
+?[33m2012-02-03T21:01:14+00:00 heroku[nginx]:?[0m 99.163.103.21 - - [03/Feb/2012
+:21:01:14 +0000] "GET /as
+?[32m?[0m
+?[35m2012-02-03T21:01:14+00:00 heroku[router]:?[0m GET stark-autumn-8160.heroku.
+com/assets/rails.png dyno=web.1 queue=0 wait=0ms service=5934ms status=500 bytes
+=643
+?[35m2012-02-03T21:01:14+00:00 heroku[router]:?[0m GET stark-autumn-8160.heroku.
+com/pages/home dyno=web.1 queue=0 wait=0ms service=356ms status=500 bytes=643
+?[33m2012-02-03T21:01:14+00:00 heroku[nginx]:?[0m 99.163.103.21 - - [03/Feb/2012
+:21:01:14 +0000] "GET /pages/home HTTP/1.1" 500 643 "-" "Mozilla/5.0 (Windows NT
+ 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535
+.7" stark-autumn-8160.heroku.com
+?[36m2012-02-03T21:01:22+00:00 heroku[web.1]:?[0m Stopping process with SIGTERM
+?[36m2012-02-03T21:01:22+00:00 app[web.1]:?[0m >> Stopping ...
+?[36m2012-02-03T21:01:22+00:00 heroku[web.1]:?[0m Process exited
+?[35m2012-02-03T21:11:35+00:00 heroku[router]:?[0m GET stark-autumn-8160.heroku.
+com/pages/home dyno=web.1 queue=0 wait=0ms service=13ms status=500 bytes=643
+?[33m2012-02-03T21:11:35+00:00 heroku[nginx]:?[0m 99.163.103.21 - - [03/Feb/2012
+:21:11:35 +0000] "GET /pages/home HTTP/1.1" 500 643 "-" "Mozilla/5.0 (Windows NT
+ 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535
+.7" stark-autumn-8160.heroku.com
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m Started GET "/assets/rails.png" f
+or 99.163.103.21 at 2012-02-03 13:11:43 -0800
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m ActiveRecord::ConnectionNotEstabl
+ished (ActiveRecord::ConnectionNotEstablished):
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tiverecord-3.2.1/lib/active_record/connection_adapters/abstract/connection_pool.
+rb:374:in `retrieve_connection'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tiverecord-3.2.1/lib/active_record/connection_adapters/abstract/connection_speci
+fication.rb:168:in `retrieve_connection'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tiverecord-3.2.1/lib/active_record/connection_adapters/abstract/connection_speci
+fication.rb:142:in `connection'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tiverecord-3.2.1/lib/active_record/query_cache.rb:67:in `rescue in call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tiverecord-3.2.1/lib/active_record/query_cache.rb:61:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tivesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tiverecord-3.2.1/lib/active_record/connection_adapters/abstract/connection_pool.
+rb:443:in `call'
+?[32m?[0m
+?[36m app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.1/lib/action
+_dispatch/middleware/callbacks.rb:28:in `block in call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tivesupport-3.2.1/lib/active_support/callbacks.rb:405:in `_run__1098471080479056
+935__call__2694950782829336517__callbacks'
+?[33m2012-02-03T21:11:43+00:00 heroku[nginx]:?[0m 99.163.103.21 - - [03/Feb/2012
+:21:11:43 +0000] "GET /assets/rails.png HTTP/1.1" 500 643 "http://stark-autumn-8
+160.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML,
+like Gecko) Chrome/16.0.912.77 Safari/535.7" stark-autumn-8160.heroku.com
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tivesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tionpack-3.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tionpack-3.2.1/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tivesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tionpack-3.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tionpack-3.2.1/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ilties-3.2.1/lib/rails/rack/logger.rb:16:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/lock.rb:15:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ilties-3.2.1/lib/rails/rack/logger.rb:26:in `call_app'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/runtime.rb:17:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tionpack-3.2.1/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tivesupport-3.2.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-cache-1.1/lib/rack/cache/context.rb:241:in `fetch'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-cache-1.1/lib/rack/cache/context.rb:132:in `forward'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-cache-1.1/lib/rack/cache/context.rb:65:in `call!'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ac
+tionpack-3.2.1/lib/action_dispatch/middleware/static.rb:53:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-cache-1.1/lib/rack/cache/context.rb:50:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-cache-1.1/lib/rack/cache/context.rb:181:in `lookup'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ilties-3.2.1/lib/rails/engine.rb:479:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ilties-3.2.1/lib/rails/application.rb:220:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ilties-3.2.1/lib/rails/railtie/configurable.rb:30:in `method_missing'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   /home/heroku_rack/lib/static_as
+sets.rb:9:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   /home/heroku_rack/lib/last_acce
+ss.rb:15:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/urlmap.rb:64:in `block in call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/urlmap.rb:49:in `each'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/builder.rb:134:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/urlmap.rb:49:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   /home/heroku_rack/lib/date_head
+er.rb:14:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:74:in `pre_process'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m
+?[32m?[0m
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   eventmachine (0.12.10) lib/even
+tmachine.rb:256:in `run_machine'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   .bundle/gems/ruby/1.9.1/gems/ra
+ck-1.4.1/lib/rack/builder.rb:134:in `call'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   eventmachine (0.12.10) lib/even
+tmachine.rb:256:in `run'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/server.rb
+:156:in `start'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:42:in `receive_data'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/backends/
+base.rb:57:in `start'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/runner.rb
+:177:in `run_command'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/controlle
+rs/controller.rb:80:in `start'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:76:in `block in pre_process'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   /usr/ruby1.9.2/bin/thin:19:in `
+load'
+?[35m2012-02-03T21:11:43+00:00 heroku[router]:?[0m GET stark-autumn-8160.heroku.
+com/assets/rails.png dyno=web.1 queue=0 wait=0ms service=1825ms status=500 bytes
+=643
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   /usr/ruby1.9.2/bin/thin:19:in `
+<main>'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m cache: [GET /assets/rails.png] mi
+ss
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/runner.rb
+:143:in `run!'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) lib/thin/connectio
+n.rb:57:in `process'
+?[36m2012-02-03T21:11:43+00:00 app[web.1]:?[0m   thin (1.2.6) bin/thin:6:in `<to
+p (required)>'
+?[33m2012-02-03T21:11:52+00:00 heroku[nginx]:?[0m 99.163.103.21 - - [03/Feb/2012
+:21:11:52 +0000] "GET /pages/home.html HTTP/1.1" 500 643 "-" "Mozilla/5.0 (Windo
+ws NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safar
+i/535.7" stark-autumn-8160.heroku.com
+?[35m2012-02-03T21:11:52+00:00 heroku[router]:?[0m GET stark-autumn-8160.heroku.
+com/pages/home.html dyno=web.1 queue=0 wait=0ms service=8ms status=500 bytes=643
+
+?[35m2012-02-03T21:11:57+00:00 heroku[router]:?[0m GET stark-autumn-8160.heroku.
+com/pages/home dyno=web.1 queue=0 wait=0ms service=11ms status=500 bytes=643
+?[33m2012-02-03T21:11:57+00:00 heroku[nginx]:?[0m 99.163.103.21 - - [03/Feb/2012
+:21:11:57 +0000] "GET /pages/home HTTP/1.1" 500 643 "-" "Mozilla/5.0 (Windows NT
+ 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535
+.7" stark-autumn-8160.heroku.com
+?[35m2012-02-03T21:14:22+00:00 heroku[router]:?[0m GET stark-autumn-8160.heroku.
+com/assets/rails.png dyno=web.1 queue=0 wait=0ms service=10ms status=500 bytes=6
+43
+
+
+?[33m2012-02-03T21:14:22+00:00 heroku[nginx]:?[0m 99.163.103.21 - - [03/Feb/2012
+:21:14:22 +0000] "GET /assets/rails.png HTTP/1.1" 500 643 "http://stark-autumn-8
+160.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML,
+like Gecko) Chrome/16.0.912.77 Safari/535.7" stark-autumn-8160.heroku.com
+?[35m2012-02-03T21:14:32+00:00 heroku[router]:?[0m GET stark-autumn-8160.heroku.
+com/pages/home dyno=web.1 queue=0 wait=0ms service=10ms status=500 bytes=643
+?[33m2012-02-03T21:14:32+00:00 heroku[nginx]:?[0m 99.163.103.21 - - [03/Feb/2012
+:21:14:32 +0000] "GET /pages/home HTTP/1.1" 500 643 "-" "Mozilla/5.0 (Windows NT
+ 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535
+.7" stark-autumn-8160.heroku.com
+
+wookie@WOOKIE-CO /c/sites/first_demo_app (master)
+$
