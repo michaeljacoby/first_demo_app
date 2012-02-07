@@ -1,13 +1,85 @@
 
+.container {
+width: 910px;
+padding : 10px 50px 10px 50px;
+}
 
 body {
-background:blue;
-padding: 10 20;
-
+background: #33CCFF;
+padding: 10px 20px;
 }
 
 h1 {
-color: blue;
-font-size:48px;
+font-size:36px;
 }
 
+
+
+header {
+padding-top:20px;
+}
+
+header img {
+padding: 1em;
+background: #fff;
+}
+
+section {
+margin-top:1em;
+font-size:120%;
+padding: 20px;
+background: #fff;
+clear: both;
+}
+
+.round {
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+
+/* links */
+
+a {
+color: #09c;
+text-decoration: none;
+}
+
+a:hover {
+color: #069;
+text-decoration: underline;
+}
+
+/* nav */
+
+nav {
+background:white;
+padding: 0 0.7em;
+white-space:nowrap;
+float: right;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+}
+
+nav ul li {
+
+list-style-type: none;
+display: inline-block;
+padding: 0.2em 0;
+}
+
+nav ul li a {
+padding: 0 5px;
+font-weight: bold;
+}
+
+nav ul li a:visited {
+color: #09c;
+}
+
+nav ul li a:hover {
+text-devoration: underline;
+}

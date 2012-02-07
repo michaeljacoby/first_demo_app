@@ -4,17 +4,30 @@
   <title><%= title %></title>
 
   <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag :media => 'style' %>
+  <%= stylesheet_link_tag 'style', :media => 'screen' %>
 </head>
 <body>
+<div class="container">
 
-<%= yield %>
+<header>
 
+<%= image_tag("boonfriend.png", :alt => "Boobuddy", :class => "round") %>
 
+<nav class="round">
 <ul>
 <li>
+<%= link_to "Home", root_path %>
 <%= link_to "About", about_path %>
+<%= link_to "Contact", contact_path %>
 </li>
 </ul>
+</nav>
+</header>
+
+<section class="round">
+<%= yield %>
+</section>
+
+</div>
 </body>
 </html>
