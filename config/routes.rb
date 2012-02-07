@@ -3,6 +3,7 @@ FirstDemoApp::Application.routes.draw do
   root :to => "pages#home"
 
   match '/contact', :to => 'pages#contact'
+  match '/signup', :to => 'pages#signup'
   match '/about', :to => 'pages#about'
   match '/help', :to => 'pages#help'
   #get "pages/home"
