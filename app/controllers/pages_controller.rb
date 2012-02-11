@@ -15,4 +15,9 @@ class PagesController < ApplicationController
   @title = "Sign up"
   end
   
+  def new
+   @user = User.find(1)
+   end
+   
+  
 end
