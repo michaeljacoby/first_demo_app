@@ -96,3 +96,21 @@ font-size:150%;
 font-weight: bold;
 padding: 20px;
 }
+
+div.field, div.actions {
+	margin-bottom: 10px;
+}
+
+
+/* Error styles */
+
+.field_with_errors {
+margin-top: 10px;
+padding: 2px;
+background-color: red;
+display: table;
+}
+
+.field_with_errors label {
+color: #fff;
+}
