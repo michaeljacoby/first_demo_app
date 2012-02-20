@@ -14,7 +14,7 @@ FirstDemoApp::Application.routes.draw do
   match '/users', :to => 'pages#create'
   match '/hometest', :to => 'pages#hometest'
   
-  get "pages/signup"
+  #get "pages/signup"
   
   #get "pages/home"
 
