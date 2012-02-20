@@ -2,7 +2,7 @@ FirstDemoApp::Application.routes.draw do
 
   get "users/show"
 
-  #resources :users
+  resources :users
 
   root :to => "pages#home"
 
