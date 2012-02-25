@@ -1,5 +1,4 @@
 <h1>Sigh up</h1>
-<p>To follow my exciting news, mainly eating habits, feel free to sign up!</p>
 
 <%= form_for(@user) do |f| %>
 
@@ -20,7 +19,7 @@
 	</div>
 	
 	<div class="field">
-		<%= f.label :password_confirmation %> <br />
+		<%= f.label :password_confirmation, "confirmation" %> <br />
 		<%= f.password_field :password_confirmation %>
 	</div>
 	

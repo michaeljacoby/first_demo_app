@@ -1,6 +1,6 @@
 
 .container {
-width: 910px;
+width: 1110px;
 padding : 10px 50px 10px 50px;
 }
 
@@ -39,7 +39,7 @@ border-radius: 10px;
 }
 
 /* links */
-
+/*
 a {
 color: #09c;
 text-decoration: none;
@@ -51,7 +51,7 @@ text-decoration: underline;
 }
 
 /* nav */
-
+/*
 nav {
 background:white;
 padding: 0 0.7em;
@@ -83,7 +83,7 @@ color: #09c;
 nav ul li a:hover {
 text-devoration: underline;
 }
-
+*/
 a.signup_button {
 margin-left: auto;
 margin-right: auto;
@@ -114,3 +114,96 @@ display: table;
 .field_with_errors label {
 color: #fff;
 }
+
+
+
+
+div.links {
+color:red;
+}
+
+
+/* Styles for menus */
+
+.boomenu {
+font: bold 14px Arial;
+white-space:nowrap;
+}
+
+.boomenu ul{
+z-index:100;
+margin: 0;
+padding: 0;
+list-style-type: none;
+float: right;
+}
+
+.boomenu ul li{
+position:relative;
+display: inline;
+float: left;
+z-index: 9999 !important;
+}
+
+.boomenu ul li a {
+	display: block;
+	color: white;
+	padding : 8px 20px;
+	padding-left: 0px;
+	color: #2d2b2b;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	}
+	
+.boomenu ul li:last-child a {
+	padding-right: 0px;
+}	
+* html .boomenu ul li a {
+	display: inline-block;
+}
+
+.boomenu ul li a:link, .boomenu ul li a:visited{
+	color: #FFFFFF
+}
+
+.boomenu ul li a.selected{
+color: #FFFFFF;
+}
+
+.boomenu ul li a:hover {
+	color: #666666;
+	
+}	
+
+
+
+/* sub menu */
+
+.boomenu ul li ul{
+position: absolute;
+left: 0;
+display: none;
+/*visibility: hidden;
+*/background:FFF;
+    -moz-box-shadow: 0px 0px 10px #666;
+    -webkit-box-shadow: 0px 0px 10px #666;
+    box-shadow: 0px
+}
+	
+.boomenu ul li ul li{
+display: list-item;
+float: none;
+border-bottom: 1px solid #E9E9E9;	
+}
+	
+.boomenu ul li ul li a {
+    color: #9F9E9E !important;
+}
+.boomenu ul li ul li a:hover {
+    color: #6F6E6E !important;
+}
+.boomenu ul li ul li:last-child {
+    border-bottom: none;
+}
+

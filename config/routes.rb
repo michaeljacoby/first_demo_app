@@ -2,17 +2,17 @@ FirstDemoApp::Application.routes.draw do
 
   
 
-  resources :users
+  resources :user
 
   root :to => "pages#home"
 
-  match '/contact', :to => 'pages#contact'
-  match '/signup', :to => 'pages#signup'
-  match '/about', :to => 'pages#about'
-  match '/help', :to => 'pages#help'
-  match '/new', :to => 'pages#new'
-  match '/users', :to => 'pages#create'
-  match '/hometest', :to => 'pages#hometest'
+  match '/contact'	, :to => 'pages#contact'
+  
+  match '/about'	, :to => 'pages#about'
+  match '/help'		, :to => 'pages#help'
+  match '/hometest'	, :to => 'pages#hometest'
+  
+  match '/signup'	, :to => 'users#new'
   
   #get "pages/signup"
   

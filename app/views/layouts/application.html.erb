@@ -13,15 +13,22 @@
 
 <%= image_tag("boonfriend.png", :alt => "Boobuddy", :class => "round") %>
 
-<nav class="round">
+<div id="navigation" class="boomenu">
 <ul>
-<li>
-<%= link_to "Home", root_path %>
-<%= link_to "About", about_path %>
-<%= link_to "Contact", contact_path %>
-</li>
+	<li><%= link_to "Home", root_path %>
+		<ul>
+			<li><div id="links"><%= link_to "Home", root_path %></div></li>
+			
+			<li><a href="www.google.com">Google sub</a>
+		</ul>
+	</li>
+	<li><a href="www.google.com">Google</a></li>
+	<li><%= link_to "About", about_path %></li>
+
+	<li><%= link_to "Contact", contact_path %></li>
+
 </ul>
-</nav>
+</div>
 </header>
 
 <section class="round">

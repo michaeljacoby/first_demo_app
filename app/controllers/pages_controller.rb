@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   @title = "Home"
   end
   
-  def home
+  def hometest
   @title = "testing second Home page"
   end
 
@@ -15,24 +15,18 @@ class PagesController < ApplicationController
   @title = "About"
   end
 
-  def signup
-  @user = User.new
-  @title = "Sign up"
-  end
+
   
-  def new
-   @user = User.find(params[:id])
-   @title = @user.name
-   end
+
    
    def create
    @user = User.new(params[:user])
    if @user.save
-   redirect_to new_path(@user)
+   redirect_to @user
    
    else
    @title = "sign up"
-   render 'signup'
+   render 'show'
    end
    
   end
