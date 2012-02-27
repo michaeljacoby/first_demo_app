@@ -17,7 +17,7 @@ class UsersController < ApplicationController
 			redirect_to @user
 		else
 			@title = "Sign up"
-			render 'show'
+			render 'new'
 		end
 	
 	end

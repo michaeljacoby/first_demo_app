@@ -24,8 +24,15 @@
 	</li>
 	<li><%= link_to "About", about_path %></li>
 
+	<% if signed_in? %>
+	<li><%= link_to "Profile", user_path(current_user) %></li>
+	<% end %>
 	<li><%= link_to "Contact", contact_path %></li>
-
+	<% if signed_in? %>
+	<li><%= link_to "Sign out", signout_path %></li>
+	<% else %>
+	<li><%= link_to "Sign in", signin_path %></li>
+	<% end %>
 </ul>
 </div>
 </header>
@@ -34,7 +41,6 @@
 <%= yield %>
 </section>
 
-<%= debug(params) %>
 
 </div>
 </body>

@@ -32,6 +32,24 @@ before_save :encrypt_password
 		return user if user.has_password?(submitted_password)
 	end
 	
+	class << self
+	
+		def authenticate_with_salt(id,cookie_salt)
+		user = find_by_id(id)
+	
+		(user && user.salt == cookie_salt) ? user : nil
+	
+	
+	end
+	
+	
+	end
+	
+	
+	
+	
+	
+	
 private
 
 
