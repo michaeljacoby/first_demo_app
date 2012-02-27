@@ -2,7 +2,7 @@ FirstDemoApp::Application.routes.draw do
 
   
 
-  resources :user
+  resources :users
 
   root :to => "pages#home"
 
@@ -13,6 +13,7 @@ FirstDemoApp::Application.routes.draw do
   match '/hometest'	, :to => 'pages#hometest'
   
   match '/signup'	, :to => 'users#new'
+  match '/users/new', :to => 'users#create'
   
   #get "pages/signup"
   
