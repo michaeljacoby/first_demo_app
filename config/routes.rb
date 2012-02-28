@@ -2,7 +2,7 @@ FirstDemoApp::Application.routes.draw do
 
   
 
-  resources :sessions, :only => [:new, :create, :destroy]
+  resources :sessions, :only => [:new, :create, :destroy, :update]
 
   resources :users
 
@@ -18,6 +18,7 @@ FirstDemoApp::Application.routes.draw do
   match '/users/new', :to => 'users#create'
   match '/signin'	, :to => 'sessions#new'
   match '/signout'	, :to => 'sessions#destroy'
+ 
   
   
   #get "pages/signup"
