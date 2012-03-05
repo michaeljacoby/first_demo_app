@@ -68,5 +68,7 @@ module SessionsHelper
 	cookies.signed[:remember_token] || [nil,nil]
 	end
 	
+
+	
 	
 end

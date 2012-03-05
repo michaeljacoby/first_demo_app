@@ -1,8 +1,14 @@
 class UsersController < ApplicationController
 
-before_filter :authenticate, :only => [:edit, :update]
+before_filter :authenticate, :only => [:index, :edit, :update]
 before_filter :correct_user, :only => [:edit, :update]
+before_filter :admin_user,	 :only => :destroy
 
+  def index
+	@user = User.order("name").page(params[:page]).per(2)
+	@title = 'All users'
+  end
+  
   
   def new
   @user = User.new
@@ -39,9 +45,21 @@ before_filter :correct_user, :only => [:edit, :update]
 		else
 	
 		@title = "Edit user"
-		render 'edit'
+		render 'users'
 		end
 	end
+	
+	
+	def destroy
+	
+	User.find(params[:id]).destroy
+	
+	@user = current_user
+	redirect_to :back
+	
+	
+	end
+	
 	
 	def authenticate
 	
@@ -55,8 +73,52 @@ before_filter :correct_user, :only => [:edit, :update]
 	redirect_to(root_path) unless current_user?(@user)
 	
 	end
+	
+	def admin_user
+	user = User.find(params[:id])
+	
+	redirect_to(root_path) if (!current_user.admin? || current_user?(user))
+	
+	end
+	
+	def forgotpassword
+		if request.post?
+			@user = User.find_by_email(params[:user][:email])
+			user = User.find_by_email(params[:user][:email])
+			if user
+				
+				user = User.create_reset_code(params[:id])
+				
+				@user.save
+				@title = "Sign in"
+				redirect_to :back
+			else
+			redirect_to :back
+			end
+			
+			
 
+		end
+	end
   
+  
+	def reset
+	
+	@user = User.find_by_reset_code(params[:reset_code]) unless params[:reset_code].nil?
+	
+		if request.post?
+			if @user.update_attributes(:password => params[:user][:password], :password_confirmation => params[:user][:password_confirmation])
+			self.current_user = @user
+			@user.delete_reset_code
+			redirect_back_or_default('/')
+			
+			else
+			render :action => :reset
+			end
+		end
+	
+	
+	end
   
   
 end

@@ -1,0 +1,14 @@
+<h1>All users</h1>
+
+
+<%= paginate @user %>
+
+<ul class="users">
+
+<% @user.each do |user| %>
+	<%= render 'user', :user => user %>
+	<% end %>
+</ul>
+
+
+<%= paginate @user %>

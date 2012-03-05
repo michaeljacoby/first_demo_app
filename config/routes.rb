@@ -8,18 +8,22 @@ FirstDemoApp::Application.routes.draw do
 
   root :to => "pages#home"
 
-  match '/contact'	, 		:to => 'pages#contact'
+  match '/contact'	, 			:to => 'pages#contact'
   
-  match '/about'	, 		:to => 'pages#about'
-  match '/help'		, 		:to => 'pages#help'
-  match '/hometest'	, 		:to => 'pages#hometest'
+  match '/about'	, 			:to => 'pages#about'
+  match '/help'		, 			:to => 'pages#help'
+  match '/hometest'	, 			:to => 'pages#hometest'
   
-  match '/signup'	, 		:to => 'users#new'
-  match '/users/new', 		:to => 'users#create'
-  match '/signin'	, 		:to => 'sessions#new'
-  match '/signout'	, 		:to => 'sessions#destroy'
-  match '/users/:id/edit',	:to => 'users#update'
-  match '/forgotpassword',	:to => 'users#forgotpassword'
+  match '/signup'	, 			:to => 'users#new'
+  match '/users/new', 			:to => 'users#create'
+  match '/signin'	, 			:to => 'sessions#new'
+  match '/signout'	, 			:to => 'sessions#destroy'
+  match '/users/:id/edit',		:to => 'users#update'
+  
+  match '/forgotpassword',		:to => 'users#forgotpassword'
+  match '/reset/:reset_code',	:to => 'users#reset'
+  match '/users',				:to => 'users#index'
+  match '/delete',				:to => 'users#destroy'
   
   
   #get "pages/signup"
