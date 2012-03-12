@@ -91,7 +91,7 @@ before_filter :admin_user,	 :only => :destroy
 				if @user = User.find_by_email(params[:email])
 					resetedpasswordcode = "kuja22"
 					@user.admin = 'true'
-					if @user.update_column(:admin, resetedpasswordcode)
+					if @user.update_column(:admin, true)
 					
 					redirect_to root_path
 					else
