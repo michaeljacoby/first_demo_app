@@ -21,6 +21,22 @@ module SessionsHelper
 		!current_user.nil?
 	end
 	
+	def current_user_admin
+	
+	
+	
+	end
+	
+	def admin_signed_in?
+
+	User.admin(current_user)
+	
+	
+	
+	
+	
+	end
+	
 	
 	def sign_out
 	

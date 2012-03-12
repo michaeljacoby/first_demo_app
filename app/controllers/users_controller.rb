@@ -5,7 +5,7 @@ before_filter :correct_user, :only => [:edit, :update]
 before_filter :admin_user,	 :only => :destroy
 
   def index
-	@user = User.order("name").page(params[:page]).per(2)
+	@user = User.order("name").page(params[:page]).per(5)
 	@title = 'All users'
   end
   
@@ -83,18 +83,20 @@ before_filter :admin_user,	 :only => :destroy
 	
 	def forgotpassword
 		if request.post?
-			@user = User.find_by_email(params[:user][:email])
-			user = User.find_by_email(params[:user][:email])
-			if user
-				
-				user = User.create_reset_code(params[:id])
-				
-				@user.save
-				@title = "Sign in"
-				redirect_to :back
-			else
-			redirect_to :back
-			end
+		
+			
+			
+				if @user = User.find_by_email(params[:email])
+					new_password = 'kuja22'
+					@user.resetpassword
+					@user.save
+			
+				else
+			
+				redirect_to root_path
+			
+				end
+			
 			
 			
 

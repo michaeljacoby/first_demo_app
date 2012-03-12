@@ -23,18 +23,31 @@
 			<li><a href="www.google.com">Google sub</a>
 		</ul>
 	</li>
+	
+	
 	<li><%= link_to "About", about_path %></li>
 
 	<% if signed_in? %>
 	<li><%= link_to "Profile", user_path(current_user) %></li>
 	<li><%= link_to "Settings", edit_user_path(current_user) %></li>
 	<% end %>
+	
+	<% if admin_signed_in? %>
+	<li><%= link_to "users", users_path %></li>
+	
+	<% else %>
+	
+	<% end %>
+	
 	<li><%= link_to "Contact", contact_path %></li>
+	
 	<% if signed_in? %>
 	<li><%= link_to "Sign out", signout_path %></li>
 	<% else %>
 	<li><%= link_to "Sign in", signin_path %></li>
 	<% end %>
+	
+	
 </ul>
 </div>
 </header>

@@ -2,7 +2,7 @@ require 'digest'
 
 class User < ActiveRecord::Base
 attr_accessor :password
-attr_accessible :name, :email, :password, :password_confirmation, :admin
+attr_accessible :name, :email, :password, :password_confirmation, :reset_password_code, :admin
 
 
 email_regex = /\A[\w.+\-]+@[a-z.]+\.[a-z]+\z/i
@@ -31,6 +31,39 @@ before_save :encrypt_password
 		return nil if  user.nil?
 		return user if user.has_password?(submitted_password)
 	end
+	
+
+	
+	def User.admin(id)
+	user = find_by_id(id)
+	return false if user.nil?
+	
+	(user.admin == true) ? true : false
+	
+	end
+	
+	# Forgot your password
+	#
+	#
+	#
+	#
+	#
+	
+	def resetpassword
+	
+	
+	
+	self.reset_password_code = Digest::SHA1.hexdigest( Time.now.to_s.split(//).sort_by {rand}.join )
+	
+	
+	
+	
+	
+	
+	end
+	
+	
+	
 	
 	class << self
 	
