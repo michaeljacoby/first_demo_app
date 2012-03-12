@@ -23,6 +23,8 @@ before_filter :admin_user,	 :only => :destroy
   def create
 	@user = User.new(params[:user])
 		if @user.save
+			UserMailer.welcome_email(@user).deliver
+			
 			redirect_to @user
 		else
 			@title = "Sign up"
@@ -87,9 +89,16 @@ before_filter :admin_user,	 :only => :destroy
 			
 			
 				if @user = User.find_by_email(params[:email])
-					new_password = 'kuja22'
-					@user.resetpassword
-					@user.save
+					resetedpasswordcode = "kuja22"
+					@user.admin = 'true'
+					if @user.update_column(:reset_password_code, resetedpasswordcode)
+					UserNotifier.deliver_new_password(@user, resetedpasswordcode)
+					redirect_to root_path
+					else
+					
+					redirect_to :back
+					
+					end
 			
 				else
 			
