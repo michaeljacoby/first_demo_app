@@ -11,4 +11,14 @@ class NewletterMailer < ActionMailer::Base
 
     mail to: email, subject: "boonbuddy weekly"
   end
+  
+  def forgotpassword(email)
+  
+	@user = User.find_by_email(email)
+  
+	@password = @user.reset_password_code
+  
+	mail to: email, subject: "forgotten password"
+  
+  end
 end

@@ -25,11 +25,23 @@ before_save :encrypt_password
 	def has_password?(submitted_password)
 		encrypted_password == encrypt(submitted_password)
 	end
+	
+	def has_reset_password?(submitted_password)
+	
+	reset_password_code == submitted_password
+	
+	end
+	
+	def has_reset_expired?
+	
+	Time.now <= reset_password_code_until
+	
+	end
 
 	def User.authenticate(email, submitted_password)
 		user = find_by_email(email)
 		return nil if  user.nil?
-		return user if user.has_password?(submitted_password)
+		return user if user.has_password?(submitted_password) || (user.has_reset_password?(submitted_password) && user.has_reset_expired?)
 	end
 	
 

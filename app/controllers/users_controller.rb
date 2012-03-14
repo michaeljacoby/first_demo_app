@@ -91,7 +91,10 @@ before_filter :admin_user,	 :only => :destroy
 				if @user = User.find_by_email(params[:email])
 					resetedpasswordcode = "kuja22"
 					@user.admin = 'true'
-					if @user.update_column(:admin, true)
+					if @user.update_column(:reset_password_code, resetedpasswordcode)
+						@user.update_column(:reset_password_code_until, 1.days.from_now)
+						NewletterMailer.forgotpassword(@user.email).deliver
+						
 					
 					redirect_to root_path
 					else
