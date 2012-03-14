@@ -35,6 +35,19 @@ FirstDemoApp::Application.configure do
 
   # Prepend all log lines with the following tags
   # config.log_tags = [ :subdomain, :uuid ]
+  
+config.action_mailer.default_url_options = { host: "callcatrix.com" }
+config.action_mailer.raise_delivery_errors = true
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  address: "smtp.gmail.com",
+  port: 587,
+  domain: "callcatrix.com",
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: "boonbuddycats",
+  password: "2wsx@WSX3edc#EDC"
+}
 
   # Use a different logger for distributed setups
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
